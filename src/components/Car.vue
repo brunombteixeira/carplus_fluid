@@ -75,7 +75,7 @@ export default {
       .property {
         font-family: "Mont Regular";
         font-size: clamp(14px, 0.85vw, 16px);
-        line-height: 1;
+        line-height: 1.3;
         color: #333;
         &:not(:last-child):after {
           content: "·";

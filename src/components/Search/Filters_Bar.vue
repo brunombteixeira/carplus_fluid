@@ -1,16 +1,25 @@
 <template>
   <section class="filters_wrapper">
     <span>Filtros</span>
-    <Autocomplete size="small" />
+    <Autocomplete size="small" background="beige" />
+    <div class="filters_list-wrapper">
+      <Select defaultText="Preço e Mensalidade" />
+      <Select defaultText="Segmento" />
+      <Select defaultText="Marca e Modelo" />
+      <Select defaultText="Anos e Quilómetros" />
+      <Select defaultText="Combustível" />
+    </div>
   </section>
 </template>
 
 <script>
 import Autocomplete from "@/components/Autocomplete.vue";
+import Select from "@/components/Select.vue";
 export default {
   name: "FiltersBar",
   components: {
     Autocomplete,
+    Select,
   },
 };
 </script>
@@ -34,5 +43,11 @@ section {
   section {
     margin: 16px 16px 24px;
   }
+}
+.filters_list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 16px;
 }
 </style>

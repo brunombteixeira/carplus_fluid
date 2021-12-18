@@ -24,6 +24,7 @@ export default {
   outline: none;
   border: none;
   box-shadow: none;
+  list-style: none;
 }
 #app {
   font-family: Mont Regular, Helvetica, Arial, sans-serif;

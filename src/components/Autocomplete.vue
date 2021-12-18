@@ -4,7 +4,7 @@
     id="search"
     placeholder="Pesquise por marca, modelo, combustível..."
     v-model="searchTerm"
-    :class="size"
+    :class="[size, background]"
   />
 
   <ul v-if="searchCountries.length">
@@ -23,6 +23,7 @@ export default {
   name: "Autocomplete",
   props: {
     size: String,
+    background: String,
   },
   setup() {
     let searchTerm = ref("");
@@ -77,6 +78,9 @@ input {
   font-size: 16px;
   line-height: 1;
   transition: all 0.05s;
+  &.beige {
+    background: #fbfbfb;
+  }
   &.small {
     padding: 20px 16px;
   }
