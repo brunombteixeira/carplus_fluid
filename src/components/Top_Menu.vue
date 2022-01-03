@@ -40,7 +40,9 @@ a.logo {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 64px;
+  padding: 24px 64px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
 }
 .main_nav > * {
   font-family: "Mont Semibold";
@@ -51,6 +53,15 @@ a.logo {
   text-decoration: none;
   &:not(:last-child) {
     margin-right: clamp(24px, 2.08vw, 40px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .top_menu {
+    padding: 24px 16px;
+  }
+  .main_nav,
+  .idgo {
+    display: none;
   }
 }
 </style>

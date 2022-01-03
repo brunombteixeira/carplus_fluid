@@ -85,7 +85,6 @@ section {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: center;
   .square {
     background-color: #c4c4c4;
@@ -96,7 +95,7 @@ section {
   .line {
     height: 1px;
     background-color: #eaeaea;
-    margin: 48px 0 48px;
+    margin: 48px 0;
   }
   h3 {
     font-family: "Mont Semibold";

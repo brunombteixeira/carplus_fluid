@@ -3,19 +3,11 @@
     <div class="grid_wrapper">
       <div class="part part1">
         <h2>Pesquise uma viatura à medida do seu orçamento</h2>
-        <!-- <div class="search_wrapper">
-          <select>
-            <option value="">Mensalidade</option>
-            <option value="volvo">Volvo</option>
-            <option value="mercedes">Mercedes</option>
-          </select>
-          <select>
-            <option value="">Entrada Inicial</option>
-            <option value="volvo">Volvo</option>
-            <option value="mercedes">Mercedes</option>
-          </select>
+        <div class="search_wrapper">
+          <Select defaultText="Mensalidade" />
+          <Select defaultText="Entrada Inicial" />
           <button class="search_btn primary_button small">Pesquisar</button>
-        </div> -->
+        </div>
       </div>
       <div class="part part2">
         <h2>Saiba, em 2 minutos, quanto vale a sua viatura de troca</h2>
@@ -29,8 +21,12 @@
 </template>
 
 <script>
+import Select from "@/components/Select.vue";
 export default {
   name: "Three_Part",
+  components: {
+    Select,
+  },
 };
 </script>
 
@@ -64,7 +60,6 @@ export default {
     font-family: "Mont Bold";
     font-size: clamp(18px, 1.45vw, 28px);
     line-height: 1.3;
-    margin-bottom: 80px;
     width: 100%;
     max-width: 340px;
   }
@@ -75,6 +70,9 @@ export default {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: space-between;
+  & > * {
+    flex-grow: 1;
+  }
 }
 select {
   font-family: "Mont Regular";

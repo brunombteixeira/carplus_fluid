@@ -1,29 +1,31 @@
 <template>
-  <div class="car">
-    <div class="image_wrapper">
-      <img src="@/assets/cars/FordTransit.png" alt="Ford Transit" />
-    </div>
-    <div class="content_wrapper">
-      <h4 class="model">{{ this.model }}</h4>
-      <span class="version">{{ this.version }}</span>
-      <div class="properties_wrapper">
-        <span class="property">Gasolina</span>
-        <span class="property">Manual</span>
-        <span class="property">2015</span>
-        <span class="property">146.000km</span>
+  <router-link to="/product">
+    <div class="car">
+      <div class="image_wrapper">
+        <img src="@/assets/cars/FordTransit.png" alt="Ford Transit" />
       </div>
-      <div class="price_wrapper">
-        <div class="monthly_payment">
-          <span class="value">320.52€/mês</span>
-          <span class="taeg">TAEG: 7.8%</span>
+      <div class="content_wrapper">
+        <h4 class="model">{{ this.model }}</h4>
+        <span class="version">{{ this.version }}</span>
+        <div class="properties_wrapper">
+          <span class="property">Gasolina</span>
+          <span class="property">Manual</span>
+          <span class="property">2015</span>
+          <span class="property">146.000km</span>
         </div>
-        <div class="price">
-          <span class="before">36 180€</span>
-          <span class="actual">32 540€</span>
+        <div class="price_wrapper">
+          <div class="monthly_payment">
+            <span class="value">320.52€/mês</span>
+            <span class="taeg">TAEG: 7.8%</span>
+          </div>
+          <div class="price">
+            <span class="before">36 180€</span>
+            <span class="actual">32 540€</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

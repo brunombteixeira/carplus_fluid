@@ -101,6 +101,7 @@ export default {
   left: 0;
   width: 100%;
   background: #fff;
+  z-index: 1;
   display: none;
 }
 
